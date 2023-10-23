@@ -1,0 +1,43 @@
+<div class="container mt-5">
+  <div class="row justify-content-md-center">
+    <div class="col-md-4">
+      <div
+        class="card bg-dark"
+        style="width: 25rem; position: relative; margin-top: 230px"
+      >
+        <div class="card-body text-white">
+          <h3 class="card-title text-center py-3">Sign Up</h3>
+          <form>
+            <div class="form-group">
+              <label>Username :</label>
+              <input
+                type="text"
+                name="username"
+                class="form-control py-2"
+                [(ngModel)]="user.username"
+                placeholder="Enter Username"
+              />
+            </div>
+
+            <div class="form-group">
+              <label>Password :</label>
+              <input
+                type="password"
+                name="password"
+                [(ngModel)]="user.password"
+                class="form-control py-2"
+                placeholder="••••••••"
+              />
+            </div>
+
+            <div class="row justify-content-md-center py-3">
+              <button type="button" (click)="register()" class="btn btn-info">
+                Sign up
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
